@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f1e6;
+    color: #5c1a1e;
+}
+
+
+/* ================= AUTH SECTION ================= */
+
+.auth-container {
+    min-height: calc(100vh - 62px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+
+/* Main Box */
+
+.auth-box {
+    width: 900px;
+    min-height: 560px;
+    background-color: #fffdf8;
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ================= LEFT SIDE ================= */
+
+.auth-left {
+    width: 45%;
+    background-color: #5c1a1e;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.brand-symbol {
+    color: #b0873f;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.auth-left h1 {
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.auth-left p {
+    color: #e4d8c3;
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 300px;
+}
+
+
+/* Fashion Text */
+
+.fashion-text {
+    display: flex;
+    gap: 12px;
+    margin-top: 35px;
+}
+
+.fashion-text span {
+    border: 1px solid #b0873f;
+    color: #b0873f;
+    padding: 7px 10px;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+
+/* ================= RIGHT SIDE ================= */
+
+.auth-right {
+    width: 55%;
+    padding: 45px 55px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-container h2 {
+    color: #2b2420;
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.form-subtitle {
+    color: #5c5248;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+
+/* ================= INPUTS ================= */
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #2b2420;
+    margin-bottom: 7px;
+}
+
+.input-box {
+    height: 45px;
+    border: 1px solid #e3d9c4;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    transition: 0.2s;
+}
+
+.input-box:focus-within {
+    border-color: #b0873f;
+    box-shadow: 0 0 0 2px rgba(176, 135, 63, 0.12);
+}
+
+.input-box .material-icons {
+    color: #5c5248;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.input-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+}
+
+.eye {
+    cursor: pointer;
+    margin-right: 0 !important;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    line-height: 1;
+}
+
+.eye:focus-visible {
+    outline: 2px solid #b0873f;
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+
+/* ================= ERROR MESSAGES ================= */
+
+small {
+    display: block;
+    color: #a3413a;
+    font-size: 11px;
+    margin-top: 5px;
+    min-height: 13px;
+}
+
+.input-group.has-error .input-box {
+    border-color: #a3413a;
+    box-shadow: 0 0 0 2px rgba(163, 65, 58, 0.1);
+}
+
+
+/* PHP error and success messages */
+
+.form-message {
+    padding: 11px 13px;
+    margin-bottom: 18px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+.form-message.error {
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+}
+
+.form-message.success {
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+}
+
+
+/* ================= OPTIONS ================= */
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0 22px;
+    font-size: 12px;
+}
+
+.form-options a {
+    color: #b0873f;
+    text-decoration: none;
+}
+
+.remember {
+    color: #5c5248;
+}
+
+.remember input {
+    margin-right: 5px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.auth-button {
+    width: 100%;
+    height: 45px;
+    background-color: #b0873f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.auth-button:hover {
+    background-color: #8f6a2c;
+}
+
+.auth-button:focus-visible {
+    outline: 3px solid rgba(176, 135, 63, 0.35);
+    outline-offset: 2px;
+}
+
+
+/* ================= SWITCH ================= */
+
+.switch-text {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 13px;
+    color: #5c5248;
+}
+
+.switch-text a {
+    color: #b0873f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* ================= SIGN UP ================= */
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+    color: #5c5248;
+    margin-bottom: 5px;
+}
+
+
+/* Hide form */
+
+.hidden {
+    display: none;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 750px) {
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .auth-container {
+        padding: 20px;
+    }
+
+    .auth-box {
+        width: 100%;
+    }
+
+    .auth-left {
+        display: none;
+    }
+
+    .auth-right {
+        width: 100%;
+        padding: 40px 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .nav-icons {
+        gap: 12px;
+    }
+
+    .nav-icons .material-icons {
+        font-size: 20px;
+    }
+
+    .auth-right {
+        padding: 35px 20px;
+    }
+}
